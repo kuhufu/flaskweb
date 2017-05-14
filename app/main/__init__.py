@@ -5,7 +5,7 @@ main = Blueprint('main', __name__)
 
 
 @main.app_context_processor
-def inject_premissions():
+def inject_permissions():
     return dict(Permisson=Permission)
 
 from . import views, errors
